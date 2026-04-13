@@ -1,4 +1,5 @@
 # IR Small Target Detection
+This project implements infrared small target detection using density peaks and region growing.
 
 ## Run
 
