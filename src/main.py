@@ -9,11 +9,11 @@ from detection import detect_targets
 from data_loader.loader import load_images
 from metrics.metrics import compute_metrics
 # PATHS
-folder = r"D:/IRSTD-1k/IRSTD-1k/IRSTD1k_Img"
+folder = "D:/IR_Folder/sample_img"
 label_folder = r"D:/IRSTD-1k/IRSTD-1k/IRSTD1k_Label"
 output_folder = "results/outputs"
 
-# CREATE OUTPUT DIR (IMPORTANT FIX)
+# CREATE OUTPUT DIR 
 os.makedirs(output_folder, exist_ok=True)
 
 # LOAD IMAGES
@@ -71,7 +71,7 @@ for image_name, img in files:
     cv2.imshow("Detected", output)
     cv2.imshow("Final Mask", final_mask)
 
-# speed control (IMPORTANT)
+# speed control
     key = cv2.waitKey(1)
 
 # press 'q' to stop

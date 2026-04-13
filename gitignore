@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+results/outputs/
+IRSTD1k_Img/
+IRSTD1k_Label/
