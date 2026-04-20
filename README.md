@@ -1,28 +1,22 @@
-# IR Small Target Detection
-This project implements infrared small target detection using density peaks and region growing.
+## 📊 Final Results (IRSTD-1K Dataset)
 
-## Run
+The model has been evaluated on the **IRSTD-1K infrared small target detection dataset**.
 
-python src/main.py
+### 🔹 Average Performance
 
-## Pipeline
+* **PD (Probability of Detection):** 0.5343
+* **FA (False Alarm Rate):** 0.010155
 
-* Grayscale conversion
-* Top-hat filtering
-* Density + peak detection
-* Region growing
-* Mask combination
+### 📁 Detailed Results
 
-## Metrics
+* `results/final_metrics.txt` → Summary of final metrics
+* `results/per_image_metrics.txt` → Per-image PD & FA values
+* `results/metrics.csv` → CSV file for easy analysis (Excel compatible)
 
-* PD (Detection Rate)
-* FA (False Alarm Rate)
+### 🖼️ Sample Detection Outputs
 
-## Results
+Detection results with bounding boxes are available in:
 
-PD ≈ 0.6–0.9
-FA ≈ 0.001–0.01
+* `results/outputs/`
 
-## Output
-
-Saved in results/outputs/
+These outputs demonstrate the model’s ability to detect small infrared targets with low false alarm rates.
